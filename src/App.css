@@ -1,38 +1,143 @@
-.App {
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+/* App.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.highlight {
+  color:#bf12e6
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Hauteur minimum = 100% de la fenêtre */
+}
+
+.content {
+  flex: 1; /* Pousse le footer vers le bas */
+  padding: 20px;
+}
+
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap; /* Important for responsiveness */
+}
+
+.home-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.home-gif {
+  flex-shrink: 0;
+}
+
+.p-home {
+  margin-top: 15px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #333;
+  font-size: 20px;
+  text-align: justify;
+  width: 80%;
+}
+
+.p-home2 {
+  margin-top: 15px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #333;
+  font-size: 20px;
+  text-align: justify;
+  width: 80%;
+}
+
+.highlight {
+  color: #00bfff;
+  font-weight: bold;
+}
+
+.title{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 cards per line */
+  gap: 20px;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width: 992px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@keyframes App-logo-spin {
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.scroll-container {
+  width: 70%;
+  overflow: hidden;
+  background-color: #222;
+  padding: 10px 0;
+}
+
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@keyframes scroll-left {
   from {
-    transform: rotate(0deg);
+    transform: translateX(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateX(-100%);
   }
 }
+
+
+
