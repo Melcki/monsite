@@ -11,9 +11,9 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <main className="content">
+      <main>
         {/* Ton contenu principal ici */}
-        <div style={{ paddingTop: '100px' }}>
+        <div style={{ paddingTop: '36px' }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About/>} />

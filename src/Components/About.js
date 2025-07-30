@@ -1,5 +1,7 @@
 import React from 'react';
 import '../App.css';
+import IconWidgetList from './IconWidgetList';
+import IconWidget from './IconWidget';
 
 
 const About = () => {
@@ -34,21 +36,7 @@ const About = () => {
             </div>
         </div>
         <h1 className='title'>Compétences professionnelles</h1>
-        <div className="card-grid">
-            <div className="card"><img src="/java.png" alt="Java" width="100" height="100" /></div>
-            <div className="card"><img src="/reactjs.png" alt="React JS" width="100" height="100" /></div>
-            <div className="card"><img src="/python.png" alt="Python" width="100" height="100" /></div>
-            <div className="card"><img src="/nodejs.png" alt="Node JS" width="100" height="100" /></div>
-            <div className="card"><img src="/git.png" alt="Git" width="100" height="100" /></div>
-            <div className="card"><img src="/postman.png" alt="Postman" width="100" height="100" /></div>
-            <div className="card"><img src="/bootstrap.png" alt="bootstrap" width="100" height="100" /></div>
-            <div className="card"><img src="/js.png" alt="javascript" width="100" height="100" /></div>
-            <div className="card"><img src="/github.png" alt="github" width="100" height="100" /></div>
-            <div className="card"><img src="/laravel.png" alt="laravel" width="100" height="100" /></div>
-            <div className="card"><img src="/mysql.png" alt="mysql" width="100" height="100" /></div>
-            <div className="card"><img src="/npm.png" alt="mysql" width="100" height="100" /></div>
-            {/* Add as many cards as needed */}
-        </div>
+        <IconWidget IconWidgetList={IconWidgetList} />
 
     </div>
   );

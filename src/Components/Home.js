@@ -1,33 +1,29 @@
 import React from 'react';
 import '../App.css';
+import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
+    const navigate = useNavigate();
 
   return (
-    <div style={{marginLeft:"3%"}}>
+    <div>
         <div className="home-container">
             <div className="home-text">
-                <p style={{fontSize:"30px", fontWeight:"bold"}}>Salut  ! </p>
-                <p style={{fontSize:"30px", fontWeight:"bold"}}>JE SUIS <span className="highlight">JUNIOR MBOUMBA</span> !</p>
-
-                <div class="scroll-container">
-                    <p class="scroll-text" style={{fontSize:"30px", fontWeight:"bold"}}>
-                        Ingénieur Génie Logiciel                    
-                    </p>
-                    <hr></hr>
-                    <p class="scroll-text" style={{fontSize:"30px", fontWeight:"bold", color:"red"}}>
-                        Développeur Full-Stack                  
-                    </p>
-                </div>
+                    <p className='p-home'>Salut, </p>
+                    <p className='p-home'>je suis <span className="highlight">J</span>unior.</p> 
+                    <p className='p-home'>ingénieur génie logiciel</p>
+                    <p className='p-desc'>Développeur Front-End & Back-End | Data Analyste</p>  
+                    <button className='btn' onClick={() => navigate('/about')}>Savoir plus</button>
+                    
             </div>
 
-            <div className="home-gif">
-                <img src="/home.gif" alt="My GIF" width="300" height="300" />
+            <div className="home-gif" >
+                <img src="/home.gif" alt="My GIF"  height="300" />
             </div>
         </div>
 
-        <div style={{marginTop:"15%", marginLeft:"3%"}}>
+        <div style={{marginTop:"15%"}}>
             <h1>Brève <span className="highlight">introduction</span></h1>
             <p className='p-home2'>
                 J'adore transformer une idée brute en un site web ou un produit qui change des vies. 
