@@ -7,36 +7,42 @@ import IconWidget from './IconWidget';
 const About = () => {
 
   return (
-    <div style={{marginLeft:"3%"}}>
+    <div style={{padding:"10% 10% 10% 10%",  textAlign: "justify", fontSize:"18px"}}>
         <div className="home-container">
-            <div className="home-text">
+            <div>
                 <h1>
                 Apprenez à me <span className="highlight">connaître</span> !
                 </h1>
-
-                <p className="p-home">
+                <img src="/images/profile picture.jpg" alt="My GIF"  height="300" />
+                <p >
                 Bonjour, je m'appelle <span className="highlight">Junior MBOUMBA</span> et je viens de Libreville, au Gabon. 
                 Je suis <span className="highlight">développeur Full-Stack</span> et détenteur d'un diplôme d'<span className="highlight">ingénieur en génie logiciel</span>.
                 </p>
 
-                <p className="p-home">
-                J'ai effectué un stage de <span className="highlight">développeur logiciel</span> chez Mega Technology Services (MTS) Africa, une ESN à Casablanca. 
-                J'aime créer des projets originaux avec de beaux designs. 
-                Vous pouvez découvrir certains de mes travaux dans la section « Projets ».
+                <p>
+                  Diplomé de l'Ecole Supérieur en Technologie de l'Information, en Management, et Génie Civil ( ESTEM ) de Casablanca.
+                  J'y ai passé toute ma formation universitaire, afin d'obtenir mon diplome d'ingénieur d'état en Sciences de Données et Développement Informatique.
                 </p>
 
-                <p className="p-home">
+                <p>
+                J'ai récemment effectué un stage de <span className="highlight">développeur logiciel</span> chez Mega Technology Services (MTS) Africa, une ESN à Casablanca. 
+                Ce stage m'a réellement permis de mettre en pratique les connaissances et compétences développer au long de ma formation.
+                </p>
+
+                <p>
                 Je suis <span className="highlight">ouvert</span> à de nouvelles collaborations ou à des projets qui pourraient m'aider et m'épanouir. 
                 N'hésitez pas à me contacter, les liens sont en pied de page.
                 </p>
+                <p>
+                  Vous pouvez découvrir certains de mes travaux dans la section « Projets ».
+                </p>
             </div>
 
-            <div className="home-gif">
-                <img src="/mp4.gif" alt="My GIF" width="300" height="300" />
-            </div>
         </div>
-        <h1 className='title'>Compétences professionnelles</h1>
-        <IconWidget IconWidgetList={IconWidgetList} />
+        <div style={{paddingTop:"10%"}}>
+          <p className='title'>Compétences professionnelles</p>
+          <IconWidget IconWidgetList={IconWidgetList} />
+        </div>
 
     </div>
   );
