@@ -18,20 +18,24 @@ const Home = () => {
                     
             </div>
 
-            <div className="home-gif" >
+            <div className="home-gif">
                 <img src="/home.gif" alt="My GIF"  height="300" />
             </div>
         </div>
 
-        <div style={{marginTop:"15%"}}>
+        <div style={{padding:"10% 0 10% 10%"}}>
             <h1>Brève <span className="highlight">introduction</span></h1>
             <p className='p-home2'>
                 J'adore transformer une idée brute en un site web ou un produit qui change des vies. 
                 Je souhaite exercer un métier qui me stimule en tant que développeur et dont je sois fier.
             </p>
             <p className='p-home2'>
-                Je maîtrise le C++ et possède quelques notions de Python . Je travaille actuellement sur plusieurs projets de la pile MERN .
-                Je compte apprendre Next.js , Three.js et TypeScript prochainement.
+                J'ai des notions dans plusieurs langages de programmation, tels que JavaScript et python. 
+                Je maitrise également une multitude de Frameworks de programmation pour concevoir, développer et publier des applications.
+            </p>
+            <p className='p-home2'>
+                De plus, au cours de ma formation d'ingénieur, j'ai eu à étudier l'analyse des données. Je continue toujours de me former 
+                sur cet aspect de mes compétences professionnelles.
             </p>
         </div>
     </div>
