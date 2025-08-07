@@ -14,13 +14,6 @@ import IconWidget from './IconWidget';
   ];
 
 
-  {/*}
-  const showMessage = () => {
-    setMessage("ESTEM Casablanca est une école d'ingénieur");
-    setShowModal(true);
-  }
-  */}
-
   return (
     <div style={{padding:"10% 10% 10% 10%",  textAlign: "justify", fontSize:"18px"}}>
         <div className="home-container">
