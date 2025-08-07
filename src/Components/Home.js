@@ -11,7 +11,7 @@ const Home = () => {
         <div className="home-container">
             <div className="home-text">
                     <p className='p-home'>Salut, </p>
-                    <p className='p-home'>je suis <span className="highlight">J</span>unior.</p> 
+                    <p className='p-home'>je suis <span className="highlight">J</span>unior,</p> 
                     <p className='p-home'>ingénieur génie logiciel</p>
                     <p className='p-desc'>Développeur Front-End & Back-End | Data Analyste</p>  
                     <button className='btn' onClick={() => navigate('/about')}>Savoir plus</button>

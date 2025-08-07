@@ -1,10 +1,25 @@
-import React from 'react';
+import {React} from 'react';
 import '../App.css';
 import IconWidgetList from './IconWidgetList';
 import IconWidget from './IconWidget';
 
 
-const About = () => {
+  const About = () => {
+
+    const experiences = [
+    { src: '/images/estem.png', alt: "ECOLE D'INGENIEUR", msg:"Ecole Supérieur en Technologie de l'Information..."},
+    { src: '/images/alomrane.png', alt: 'Al Omrane' },
+    { src: '/images/mts.png', alt: 'MTS Group Africa' },
+    
+  ];
+
+
+  {/*}
+  const showMessage = () => {
+    setMessage("ESTEM Casablanca est une école d'ingénieur");
+    setShowModal(true);
+  }
+  */}
 
   return (
     <div style={{padding:"10% 10% 10% 10%",  textAlign: "justify", fontSize:"18px"}}>
@@ -38,6 +53,20 @@ const About = () => {
                 </p>
             </div>
 
+        </div>
+        {/* Modal part 
+        <div>
+          <button onClick={showMessage}>Afficher la boîte</button>
+          
+          <Modal show={showModal} onClose={() => setShowModal(false)}>
+            <h2>Titre de la boîte</h2>
+            <p>{message}</p>
+          </Modal>
+        </div>
+        */}
+        <div style={{paddingTop:"10%"}}>
+          <p className='title'>Expériences professionnelles</p>
+          <IconWidget IconWidgetList={experiences}/>
         </div>
         <div style={{paddingTop:"10%"}}>
           <p className='title'>Compétences professionnelles</p>

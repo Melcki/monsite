@@ -12,6 +12,7 @@ const IconWidgetList = [
   { src: '/laravel.png', alt: 'Laravel' },
   { src: '/mysql.png', alt: 'MySQL' },
   { src: '/npm.png', alt: 'NPM' },
+  {src: '/images/powerbi.png', alt:'Power BI'}
 ];
 
 export default IconWidgetList;
