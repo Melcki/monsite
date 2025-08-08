@@ -16,10 +16,11 @@ const Header = () => {
         ☰
       </button>
       <nav className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <NavLink to="/" className="nav-link" onClick={handleMenuToggle}><i className="bi bi-house-door"></i> Home</NavLink>
-        <NavLink to="/about" className="nav-link" onClick={handleMenuToggle}><i className="bi bi-person-fill"></i> About</NavLink>
-        <NavLink to="/projects" className="nav-link" onClick={handleMenuToggle}><i className="bi bi-code-slash"></i> Projects</NavLink>
-        <NavLink to="/resume" className="nav-link" onClick={handleMenuToggle}><i className="bi bi-file-earmark-text-fill"></i> Resume</NavLink>
+        <NavLink to="/" className="nav-link" onClick={handleMenuToggle}><i className="bi bi-house-door"></i> Accueil</NavLink>
+        <NavLink to="/about" className="nav-link" onClick={handleMenuToggle}><i className="bi bi-person-fill"></i> A propos</NavLink>
+        <NavLink to="/projects" className="nav-link" onClick={handleMenuToggle}><i className="bi bi-code-slash"></i> Projets</NavLink>
+        <NavLink to="/resume" className="nav-link" onClick={handleMenuToggle}><i className="bi bi-file-earmark-text-fill"></i> CV</NavLink>
+        <NavLink to="/contact" className="nav-link" onClick={handleMenuToggle}><i className="bi bi-file-earmark-text-fill"></i> Contacts</NavLink>
       </nav>
     </header>
   );
