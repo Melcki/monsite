@@ -14,6 +14,7 @@ import IconWidget from './IconWidget';
   ];
 
 
+
   return (
     <div style={{padding:"10% 10% 10% 10%",  textAlign: "justify", fontSize:"18px"}}>
         <div className="home-container">
